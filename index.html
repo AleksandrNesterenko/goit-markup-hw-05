@@ -43,7 +43,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="button" type="button" aria-label="Заказать услугу">Заказать услугу</button>
+          <button class="button" type="button" aria-label="Заказать услугу" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- advantages -->
@@ -77,12 +77,15 @@
           <ul>
             <li class="item">
               <img src="./images/about/box1.jpg" alt="фронт-энд разработка" width="370" height="294" />
+              <span class="text">Десктопные приложения</span>
             </li>
             <li class="item">
               <img src="./images/about/box2.jpg" alt="разработка мобильных приложений" width="370" height="294" />
+              <span class="text">Мобильные приложения</span>
             </li>
             <li class="item">
               <img src="./images/about/box3.jpg" alt="разработка игр" width="370" height="294" />
+              <span class="text">Дизайнерские решения</span>
             </li>
           </ul>
         </div>
@@ -338,5 +341,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+<button type="button" class="close-button" data-modal-close>
+<svg width="12" height="12">
+  <use href="./images/svg/symbol-defs.svg#icon-krest"></use>
+</svg>
+</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
